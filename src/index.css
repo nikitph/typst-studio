@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-panel: var(--panel);
+  --color-sidebar: var(--sidebar);
+  --color-preview: var(--preview);
+  --color-code: var(--code);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-destructive: var(--destructive);
+  --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+}
+
+:root {
+  --background: #f7f8f5;
+  --foreground: #1b1f1d;
+  --panel: #ffffff;
+  --sidebar: #f1f4ef;
+  --preview: #e8ece7;
+  --code: #fbfcfa;
+  --muted: #e7ece4;
+  --muted-foreground: #5f6861;
+  --border: #d6ded3;
+  --ring: #26735f;
+  --primary: #236b58;
+  --primary-foreground: #ffffff;
+  --secondary: #dfe9e3;
+  --secondary-foreground: #1c2a23;
+  --destructive: #a33232;
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--background);
+}
+
+button,
+textarea {
+  font: inherit;
+}
+
+.typst-preview svg {
+  display: block;
+  height: auto;
+  max-width: min(100%, 920px);
+  border-radius: 4px;
+  background: white;
+  box-shadow:
+    0 24px 60px rgb(44 55 47 / 0.15),
+    0 1px 2px rgb(44 55 47 / 0.14);
+}
